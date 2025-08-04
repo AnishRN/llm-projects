@@ -16,8 +16,11 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# Load HuggingFace token and create embeddings
-os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
+# Set HuggingFace token from Streamlit secrets
+os.environ['HUGGINGFACE_API_KEY'] = st.secrets["HF_TOKEN"]
+
+# Create embeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 # Set up Streamlit UI
@@ -146,3 +149,4 @@ if api_key:
                     st.markdown(f"**{role}:** {msg.content}")
 else:
     st.warning("⚠️ Please enter your Groq API Key to use the chatbot.")
+
