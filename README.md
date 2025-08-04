@@ -6,15 +6,15 @@ This repository contains a collection of powerful chatbot projects built using *
 
 ## 🚀 Live Apps
 
-### 1. 💻 Code Assistant Bot  
-A local code generation chatbot that helps you write, debug, and understand code.  
-🔗 [Try the App](https://your-code-assistant-app.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/code-assistant)
+### 1. 📰 Website Content Summarizer  
+Input any URL (news, blogs, or YouTube) and get an LLM-generated summary using structured parsing.  
+🔗 [Try the App](https://llm-projects-u5obsljktre25au2wn37dv.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/web-summarizer)
 
 ---
 
-### 2. 🗨️ Conversational Chatbot  
-A general-purpose conversational agent that engages in human-like dialogue using a local LLM.  
-🔗 [Try the App](https://your-conversational-bot.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/conversational-chatbot)
+### 2. 🗨️ PDF based Conversational bot
+A general-purpose conversational agent that engages in human-like dialogue using a local LLM and allows user to input a PDF or document for summarisation and conversations.
+🔗 [Try the App](https://llm-projects-ip5unqsfz8mwn6pemgejqp.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/conversational-chatbot)
 
 ---
 
@@ -42,10 +42,9 @@ A simple question-answering assistant trained to respond to factual queries with
 
 ---
 
-### 7. 📰 Website Content Summarizer  
-Input any URL (news, blogs, or YouTube) and get an LLM-generated summary using structured parsing.  
-🔗 [Try the App](https://llm-projects-u5obsljktre25au2wn37dv.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/web-summarizer)
-
+### 7. 💻 Code Assistant Bot  
+A local code generation chatbot that helps you write, debug, and understand code.  
+🔗 [Try the App](https://your-code-assistant-app.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/code-assistant)
 ---
 
 ## 📁 Project Structure
