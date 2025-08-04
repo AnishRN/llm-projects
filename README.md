@@ -51,7 +51,7 @@ A simple question-answering assistant trained to respond to factual queries with
 ### 7. 💻 Code Assistant Bot  
 A local code generation chatbot that helps you write, debug, and understand code.  
 🔗 Try the App:  
-[Streamlit](https://your-code-assistant-app.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/code-assistant)
+[Streamlit](https://llm-projects-wilz3c3pdlnnwuekdauhyv.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/code-assistant)
 
 ---
 
