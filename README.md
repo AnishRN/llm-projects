@@ -20,19 +20,19 @@ A general-purpose conversational agent that engages in human-like dialogue using
 
 ### 3. 🧮 SQL Query Assistant  
 A chatbot capable of connecting to and interacting with SQL databases. It can answer questions using data from connected tables.  
-🔗 [Try the App](https://your-sql-assistant.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/sql-assistant)
+🔗 [Try the App](https://llm-projects-ivxjdcu3wtmjgxov5x6y8a.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/sql-assistant)
 
 ---
 
 ### 4. ➕ Math Problem Solver  
 This tool can read, understand, and solve mathematical word problems using LLM-powered reasoning.  
-🔗 [Try the App](https://your-math-solver.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/math-solver)
+🔗 [Try the App](https://llm-projects-kvfxyorrb2ntnxwaf6pvtu.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/math-solver)
 
 ---
 
 ### 5. 🌐 Online Info Search Bot  
 A research assistant bot that can search live web data and summarize it for you using LangChain tools.  
-🔗 [Try the App](https://your-info-search-bot.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/info-search-bot)
+🔗 [Try the App](https://llm-projects-vappraayuydje6bypyserh.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/info-search-bot)
 
 ---
 
