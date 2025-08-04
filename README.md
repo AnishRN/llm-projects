@@ -14,7 +14,7 @@ Input any URL (news, blogs, or YouTube) and get an LLM-generated summary using s
 ---
 
 ### 2. 🗨️ PDF based Conversational bot  
-A general-purpose conversational agent that engages in human-like dialogue using a local LLM and allows user to input a PDF or document for summarisation and conversations.
+A general-purpose conversational agent that engages in human-like dialogue using a local LLM and allows user to input a PDF or document for summarisation and conversations.  
 🔗 Try the App:  
 [Streamlit](https://llm-projects-ip5unqsfz8mwn6pemgejqp.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/conversational-chatbot)
 
