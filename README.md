@@ -44,7 +44,7 @@ A simple question-answering assistant trained to respond to factual queries with
 
 ### 7. 📰 Website Content Summarizer  
 Input any URL (news, blogs, or YouTube) and get an LLM-generated summary using structured parsing.  
-🔗 [Try the App]([https://your-summarizer-app.streamlit.app/](https://llm-projects-u5obsljktre25au2wn37dv.streamlit.app/)) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/web-summarizer)
+🔗 [Try the App](https://llm-projects-u5obsljktre25au2wn37dv.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/web-summarizer)
 
 ---
 
