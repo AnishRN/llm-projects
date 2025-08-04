@@ -8,43 +8,50 @@ This repository contains a collection of powerful chatbot projects built using *
 
 ### 1. 📰 Website Content Summarizer  
 Input any URL (news, blogs, or YouTube) and get an LLM-generated summary using structured parsing.  
-🔗 Try the App[Streamlit](https://llm-projects-u5obsljktre25au2wn37dv.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/web-summarizer)
+🔗 Try the App:  
+[Streamlit](https://llm-projects-u5obsljktre25au2wn37dv.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/web-summarizer)
 
 ---
 
 ### 2. 🗨️ PDF based Conversational bot
 A general-purpose conversational agent that engages in human-like dialogue using a local LLM and allows user to input a PDF or document for summarisation and conversations.
-🔗 Try the App[Streamlit](https://llm-projects-ip5unqsfz8mwn6pemgejqp.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/conversational-chatbot)
+🔗 Try the App:  
+[Streamlit](https://llm-projects-ip5unqsfz8mwn6pemgejqp.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/conversational-chatbot)
 
 ---
 
 ### 3. 🧮 SQL Query Assistant  
 A chatbot capable of connecting to and interacting with SQL databases. It can answer questions using data from connected tables.  
-🔗 Try the App[Streamlit](https://llm-projects-ivxjdcu3wtmjgxov5x6y8a.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/sql-assistant)
+🔗 Try the App:  
+[Streamlit](https://llm-projects-ivxjdcu3wtmjgxov5x6y8a.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/sql-assistant)
 
 ---
 
 ### 4. ➕ Math Problem Solver  
 This tool can read, understand, and solve mathematical word problems using LLM-powered reasoning.  
-🔗 Try the App[Streamlit](https://llm-projects-kvfxyorrb2ntnxwaf6pvtu.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/math-solver)
+🔗 Try the App:  
+[Streamlit](https://llm-projects-kvfxyorrb2ntnxwaf6pvtu.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/math-solver)
 
 ---
 
 ### 5. 🌐 Online Info Search Bot  
 A research assistant bot that can search live web data and summarize it for you using LangChain tools.  
-🔗 Try the App[Streamlit](https://llm-projects-vappraayuydje6bypyserh.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/info-search-bot)
+🔗 Try the App:  
+[Streamlit](https://llm-projects-vappraayuydje6bypyserh.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/info-search-bot)
 
 ---
 
 ### 6. ❓ QnA Chatbot  
 A simple question-answering assistant trained to respond to factual queries with concise, informative responses.  
-🔗 Try the App[Streamlit](https://llm-projects-bky9sfcehcgqsqvlaakvls.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/qna-chatbot)
+🔗 Try the App:  
+[Streamlit](https://llm-projects-bky9sfcehcgqsqvlaakvls.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/qna-chatbot)
 
 ---
 
 ### 7. 💻 Code Assistant Bot  
 A local code generation chatbot that helps you write, debug, and understand code.  
-🔗 Try the App[Streamlit](https://your-code-assistant-app.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/code-assistant)
+🔗 Try the App:  
+[Streamlit](https://your-code-assistant-app.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/code-assistant)
 
 ---
 
