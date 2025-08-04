@@ -8,10 +8,12 @@ from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-##Langsmith Tracing
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+# Set HuggingFace token from Streamlit secrets
+os.environ['HUGGINGFACE_API_KEY'] = st.secrets["HF_TOKEN"]
+
+# Create embeddings
+from langchain_huggingface import HuggingFaceEmbeddings
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 ##Prompt Template
 prompt = ChatPromptTemplate.from_messages(
@@ -38,4 +40,5 @@ if input_text:
         except Exception as e:
             st.error(f"An error occurred: {e}")
             
+
             
