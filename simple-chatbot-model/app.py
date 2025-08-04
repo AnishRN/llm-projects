@@ -4,36 +4,40 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain.embeddings import HuggingFaceHubEmbeddings  # ✅ new import
 
 # Load environment variables
 load_dotenv()
 
-# ✅ Get HF token from Streamlit secrets (secure)
-os.environ["HUGGINGFACE_API_KEY"] = st.secrets["HF_TOKEN"]
+# ✅ Set secrets (Streamlit Cloud style)
+HF_TOKEN = st.secrets["HF_TOKEN"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
-# ✅ Set embeddings (forces use of CPU by not overriding any device)
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+# ✅ Set HuggingFaceHubEmbeddings (cloud-compatible; no torch backend)
+embeddings = HuggingFaceHubEmbeddings(
+    repo_id="sentence-transformers/all-MiniLM-L6-v2",
+    huggingfacehub_api_token=HF_TOKEN
+)
 
 # Prompt
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a helpful assistant."),
-    ("user", "Question:{question}"),
+    ("user", "Question: {question}"),
 ])
 
-# UI
-st.title("Simple Chatbot using Groq + HuggingFace")
+# Streamlit UI
+st.title("Simple Chatbot using Groq + HuggingFace API")
 
 input_text = st.text_input("Ask a question:")
 
-# Use Groq's hosted LLM instead of local Ollama
-llm = ChatGroq(groq_api_key=st.secrets["GROQ_API_KEY"], model="Gemma2-9B-it")
+# Use Groq hosted model
+llm = ChatGroq(groq_api_key=GROQ_API_KEY, model="Gemma2-9B-it")
 
-# Build chain
+# Chain setup
 output_parser = StrOutputParser()
 chain = prompt | llm | output_parser
 
-# Generate response
+# On submit
 if input_text:
     with st.spinner("Generating response..."):
         try:
