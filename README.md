@@ -38,7 +38,7 @@ A research assistant bot that can search live web data and summarize it for you 
 
 ### 6. ❓ QnA Chatbot  
 A simple question-answering assistant trained to respond to factual queries with concise, informative responses.  
-🔗 [Try the App](https://your-qna-bot.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/qna-chatbot)
+🔗 [Try the App](https://llm-projects-bky9sfcehcgqsqvlaakvls.streamlit.app/) &nbsp;&nbsp; | &nbsp;&nbsp; [Hugging Face](https://huggingface.co/spaces/your-username/qna-chatbot)
 
 ---
 
