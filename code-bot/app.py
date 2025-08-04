@@ -1,40 +1,43 @@
-import requests
-import json
-import gradio as gr
+import streamlit as st
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_groq import ChatGroq
 
-url="http://localhost:11434/api/generate"
+# Streamlit UI
+st.set_page_config(page_title="CodeGuru", layout="centered")
+st.title("👨‍💻 CodeGuru - Your AI Coding Assistant")
+st.markdown("Ask any programming or code-related question.")
 
-headers={
+# Prompt for Groq API Key
+groq_api_key = st.text_input("🔑 Enter your Groq API Key", type="password")
 
-    'Content-Type':'application/json'
-}
+# Prompt for Question
+user_input = st.text_area("💬 Your code question:")
 
-history=[]
+# Model and Prompt Setup
+if groq_api_key and user_input:
+    with st.spinner("Generating code solution..."):
+        try:
+            # Load model
+            llm = ChatGroq(
+                groq_api_key=groq_api_key,
+                model="mixtral-8x7b-32768"  # Best for code & reasoning
+            )
 
-def generate_response(prompt):
-    history.append(prompt)
-    final_prompt="\n".join(history)
+            # Prompt template
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", 
+                 "You are CodeGuru, an expert programming assistant created by ARN. "
+                 "Help users with code, explain bugs, and provide code examples when needed."),
+                ("user", "{question}")
+            ])
 
-    data={
-        "model": "codeguru",
-        "prompt":final_prompt,
-        "stream":False
-    }
+            chain = prompt | llm | StrOutputParser()
 
-    response=requests.post(url,headers=headers,data=json.dumps(data))
+            response = chain.invoke({"question": user_input})
+            st.success(response)
 
-    if response.status_code==200:
-        response=response.text
-        data=json.loads(response)
-        actual_response=data['response']
-        return actual_response
-    else:
-        print("error:",response.text)
-
-
-interface=gr.Interface(
-    fn=generate_response,
-    inputs=gr.Textbox(lines=4,placeholder="Enter your Prompt"),
-    outputs="text"
-)
-interface.launch()
+        except Exception as e:
+            st.error(f"❌ Error: {e}")
+else:
+    st.info("Enter your Groq API Key and a coding question to begin.")
