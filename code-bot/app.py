@@ -21,7 +21,7 @@ if groq_api_key and user_input:
             # Load model
             llm = ChatGroq(
                 groq_api_key=groq_api_key,
-                model="mixtral-8x7b-32768"  # Best for code & reasoning
+                model="llama-3.1-8b-instant"  # Best for code & reasoning
             )
 
             # Prompt template
@@ -41,3 +41,4 @@ if groq_api_key and user_input:
             st.error(f"❌ Error: {e}")
 else:
     st.info("Enter your Groq API Key and a coding question to begin.")
+
