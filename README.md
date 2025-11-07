@@ -56,10 +56,12 @@ A local code generation chatbot that helps you write, debug, and understand code
 ---
 
 ### 8. 💹 **FinanceQA Chatbot (NEW)**  
+
 A domain-specific financial analysis chatbot built using a **T5-small model fine-tuned on the FinanceQA dataset**.  
 It answers financial questions using context-aware extraction—and falls back to real dataset contexts when none are provided.
 🔗 Try the App:  
 [Streamlit](https://llm-projects-jlh6epa8rk8trrurs2f7yg.streamlit.app/) &nbsp;&nbsp;
+
 ---
 
 ## 📁 Project Structure
