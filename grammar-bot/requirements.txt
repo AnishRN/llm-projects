@@ -1,8 +1,6 @@
 streamlit
-language-tool-python
 transformers
 torch
 sentencepiece
-plotly
 nltk
-torchvision
+plotly
