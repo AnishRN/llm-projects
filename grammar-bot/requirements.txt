@@ -4,3 +4,6 @@ transformers
 torch
 plotly
 nltk
+torch
+torchvision
+sentencepiece
